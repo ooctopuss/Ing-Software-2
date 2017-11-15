@@ -1,2 +1,2 @@
 # Ing-Software-2
-caricamento del progetto 
+Progetto a cura di Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
