@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hours_standard: 1
+  rate_hour_standard: 1.5
+  hours_extra: 1
+  rate_hour_extra: 1.5
+  total_amount: 1.5
+  date_of_issue: 2017-11-15 20:06:17
+  recessed_date: 2017-11-15 20:06:17
+  penalty_clause: 1.5
+  client: one
+  activity: one
+
+two:
+  hours_standard: 1
+  rate_hour_standard: 1.5
+  hours_extra: 1
+  rate_hour_extra: 1.5
+  total_amount: 1.5
+  date_of_issue: 2017-11-15 20:06:17
+  recessed_date: 2017-11-15 20:06:17
+  penalty_clause: 1.5
+  client: two
+  activity: two
