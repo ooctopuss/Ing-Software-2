@@ -32,7 +32,7 @@ RailsAdmin.config do |config|
     show
     edit
     delete
-    
+
 
     ## With an audit adapter, you can add:
     # history_index
@@ -41,4 +41,10 @@ RailsAdmin.config do |config|
   RailsAdmin.config do |config|
     config.total_columns_width = 2000
   end
+
+  config.model Invoice do
+  configure :total_amount do
+    read_only true
+  end
+end
 end
