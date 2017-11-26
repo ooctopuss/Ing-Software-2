@@ -5,6 +5,23 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+end
+
+group :test, :development do
+  gem 'factory_bot_rails'
+  gem 'ffaker'
+end
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
+
+
 gem 'italian_job'
 gem 'validates_email_format_of'
 gem 'remotipart', github: 'mshibuya/remotipart'

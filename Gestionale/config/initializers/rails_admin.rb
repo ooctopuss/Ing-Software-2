@@ -43,8 +43,17 @@ RailsAdmin.config do |config|
   end
 
   config.model Invoice do
-  configure :total_amount do
-    read_only true
+    configure :total_amount do
+      read_only true
+    end
   end
-end
+
+
+  config.model Client do
+    configure :iva do
+      read_only true
+    end
+  end
+
+  
 end
