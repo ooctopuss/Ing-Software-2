@@ -1,10 +1,10 @@
-Feature: edit a client
+Feature: edit a public authority client
 	In order to mantain my app up to date
 	As a user
-	I want edit a client
+	I want edit a public authority client
 
-	Background:
-		Given public_authority = false
+  Background:
+    Given public_authority = true
 
   Scenario: change the name of a client
 		Given there is a client
@@ -68,20 +68,11 @@ Feature: edit a client
   	Then I should see an error
 
 
-  Scenario: change the cf of a client
+  Scenario: can't change the cf of a client
   	Given there is a client
   	And I am viewing the details of a client
   	When I click on "Edit"
   	And I change the cf to "RSSMRA85T10A562S"
-  	And I click on "Save"
-  	Then I am on the page of the client
-  	And the cf of the client is "RSSMRA85T10A562S"
-
-  Scenario: can't leave the cf blank
-  	Given there is a client
-  	And I am viewing the details of a client
-  	When I click on "Edit"
-  	And I change the cf to ""
   	And I click on "Save"
   	Then I should see an error
 
@@ -101,13 +92,3 @@ Feature: edit a client
   	And I change the p_iva to ""
   	And I click on "Save"
   	Then I should see an error
-
-
-    Scenario: change the cf of a client
-    	Given there is a client
-    	And I am viewing the details of a client
-    	When I click on "Edit"
-    	And I change the cf to "RSSMRA85T10A562S"
-    	And I click on "Save"
-    	Then I am on the page of the client
-    	And the cf of the client is "RSSMRA85T10A562S"
