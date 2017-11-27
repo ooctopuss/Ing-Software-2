@@ -126,3 +126,13 @@ Feature: edit an invoice
     And I change the activity to ""
     And I click on "Save"
     Then I should see an error
+
+
+	Scenario: change the penalty_clause of an invoice
+	   Given there is a invoice
+	   And I am viewing the details of an invoice
+	   When I click on "Edit"
+	   And I change the penalty_clause to "3000"
+	   And I click on "Save"
+	   Then I am on the page of the invoice
+	   And the penalty_clause of the invoice is "3000"
