@@ -32,7 +32,7 @@ Feature: create a new invoice
     And I click on "Save"
     Then I should see an error
 
-  Scenario: error when entering rate_hour_standard smaller than 0
+  Scenario: error when entering rate_hour_extra smaller than 0
     Given I am on the list of Invoices
     When I click on "Add new"
     And I fill in the form with a rate_hour_standard smaller than 0
