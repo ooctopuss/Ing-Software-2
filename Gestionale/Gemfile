@@ -22,6 +22,10 @@ group :test do
 end
 
 
+
+
+
+
 gem 'italian_job'
 gem 'validates_email_format_of'
 gem 'remotipart', github: 'mshibuya/remotipart'

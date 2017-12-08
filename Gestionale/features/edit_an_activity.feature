@@ -3,7 +3,10 @@ Feature: edit an activity
 	As a user
 	I want edit an activity
 
-
+	Background:
+	Given I am a new, authenticated user
+	And I am logged in
+@javascript
   Scenario: change the name of an activity
 		Given there is an activity
 		And I am viewing the details of an activity
@@ -13,6 +16,7 @@ Feature: edit an activity
 		Then I am on the page of the activity
 		And the name of the activity is "ABCDEFG"
 
+		@javascript
   Scenario: can't leave the name blank
   	Given there is an activity
   	And I am viewing the details of an activity
@@ -21,6 +25,7 @@ Feature: edit an activity
   	And I click on "Save"
   	Then I should see an error
 
+		@javascript
   Scenario: change the description of an activity
     Given there is an activity
     And I am viewing the details of an activity
@@ -30,6 +35,7 @@ Feature: edit an activity
     Then I am on the page of the activity
     And the description of the activity is "ABCDEFG"
 
+		@javascript
   Scenario: can't leave the description blank
     Given there is an activity
     And I am viewing the details of an activity

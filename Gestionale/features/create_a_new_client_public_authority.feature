@@ -3,44 +3,42 @@ Feature: create a public authority client
 	As a user
 	I want to create a new public authority client
 
-  Background:
-    Given public_authority = true
+	Background:
+		Given I am a new, authenticated user
+		And I am logged in
 
-  Scenario: create a valid client
-		Given I am on the list of clients
-    When I click on "Add new"
-    And I fill in the form with valid data
-    And I click on "Save"
+
+@javascript
+  Scenario: create a valid public authority client
+		Given I am on the list of public authority clients
+    And I fill in the form with valid data for public authority
     Then I should see the new client in the list
 
 
-  Scenario: error when entering invalid email
+@javascript
+  Scenario: error when entering invalid email for public authority
     Given I am on the list of clients
-    When I click on "Add new"
-    And I fill in the form with an invalid email
-    And I click on "Save"
-    Then I should see an error
-
-  Scenario: can't leave the address blank
-    Given I am on the list of clients
-    When I click on "Add new"
-    And I dont't fill in the form an address
-    And I click on "Save"
+    And I fill in the form with an invalid email for public authority
     Then I should see an error
 
 
-  Scenario: can leave the cf blank
+@javascript
+  Scenario: can't leave the address blank for public authority
     Given I am on the list of clients
-    When I click on "Add new"
-    And I leave the cf blank
-    And I click on "Save"
+    And I dont't fill in the form an address for public authority
+    Then I should see an error
+
+
+@javascript
+  Scenario: can leave the cf blank for public authority
+    Given I am on the list of clients
+    And I leave the cf blank for public authority
     Then I should see the new client in the list
 
 
 
-  Scenario: error when entering invalid p_iva
+@javascript
+  Scenario: error when entering invalid p_iva for public authority
     Given I am on the list of clients
-    When I click on "Add new"
-    And I fill in the form with an invalid p_iva
-    And I click on "Save"
+    And I fill in the form with an invalid p_iva for public authority
     Then I should see an error

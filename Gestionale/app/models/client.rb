@@ -1,4 +1,5 @@
 class Client < ApplicationRecord
+
   has_many :Invoices, dependent: :destroy
 
 
@@ -8,6 +9,7 @@ class Client < ApplicationRecord
   validates :address, presence: true
   validates :p_iva, presence: true, partita_iva_format: true
   validates :cf,  codice_fiscale_format: true, :presence => true, :if => :condition_testing?
+
 
 
   #controllo se si sta inserendo public_authority oppure no, in caso affermativo il codice fiscale non è richiesto
@@ -26,11 +28,6 @@ class Client < ApplicationRecord
       self.iva = 0
     end
   end
-
-  def iva
-    @iva
-  end
-
 
 
 

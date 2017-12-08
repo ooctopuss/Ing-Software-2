@@ -4,8 +4,13 @@ Feature: create a client
 	I want to create a new client
 
 	Background:
-    Given public_authority = false
 
+		Given I am a new, authenticated user
+		And I am logged in
+
+
+
+@javascript
   Scenario: create a valid client
 		Given I am on the list of clients
     When I click on "Add new"
@@ -13,14 +18,14 @@ Feature: create a client
     And I click on "Save"
     Then I should see the new client in the list
 
-
+@javascript
   Scenario: error when entering invalid email
     Given I am on the list of clients
     When I click on "Add new"
     And I fill in the form with an invalid email
     And I click on "Save"
     Then I should see an error
-
+@javascript
   Scenario: can't leave the address blank
     Given I am on the list of clients
     When I click on "Add new"
@@ -29,7 +34,7 @@ Feature: create a client
     Then I should see an error
 
 
-
+@javascript
   Scenario: error when entering invalid cf
     Given I am on the list of clients
     When I click on "Add new"
@@ -37,7 +42,7 @@ Feature: create a client
     And I click on "Save"
     Then I should see an error
 
-
+@javascript
   Scenario: error when entering invalid p_iva
     Given I am on the list of clients
     When I click on "Add new"
@@ -46,10 +51,10 @@ Feature: create a client
     Then I should see an error
 
 
-
-  Scenario: can leave the cf blank
+@javascript
+  Scenario: can't leave the cf blank
     Given I am on the list of clients
     When I click on "Add new"
     And I leave the cf blank
     And I click on "Save"
-    Then I should see the new client in the list
+    Then I should see an error

@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-
-  devise_for :users
+    devise_for :users
   mount RailsAdmin::Engine => '/', as: 'rails_admin'
-  root 'dashboard#index'
+
+
+
+  root  'sessions#new'
 
   resources :clients
   resources :invoices
