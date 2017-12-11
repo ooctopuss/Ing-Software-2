@@ -9,55 +9,55 @@ Our Billing System, was born with the target of giving our clients a great optio
 
 # USER STORY:
 
-## 1. 
+### 1. 
 Chiedo che l’impaginazione della mia fattura sia effettuata usando l’intestazione della mia azienda e predisponendo uno spazio adeguato per le ore fatturate e non fatturate e un conto totale comprensivo dell’IVA aggiornata. 
 
 **PESO (1 a 5): 1
  PRIORITÀ (1 a 5): 3**
 
-## 2.
+### 2.
 La mia azienda ha la necessità di lavorare sia con clienti privati che con clienti pubblici e questo deve essere predisposto con possibilità di modificare: tempi di pagamento, metodi di pagamento e prezzo orario.
 
 **PESO (1 a 5): 3
  PRIORITÀ (1 a 5): 4**
 
-## 3.
+### 3.
 Chiedo che sia implementato un contatore per le ore lavorate il quale avrà il compito di tracciare le ore effettivamente impiegate per un determinato cliente. Quando le ore dedicate ad un cliente raggiungeranno le ore standard previste dal contratto dovranno essere aumentate le ore extra.
 
 **PESO (1 a 5): 2
  PRIORITÀ (1 a 5): 4**
 
-## 4.
+### 4.
 Ad ogni cliente, una volta stipulato il contratto, invio la fattura con il prezzo da pagare per le ore standard concordate.
 
 **PESO (1 a 5): 2
  PRIORITÀ (1 a 5): 5**
 
-## 5.
+### 5.
 Se sono necessarie ore aggiuntive perché il cliente ha richiesto delle modifiche, la tariffa oraria sarà più alta, se la causa è il team di lavoro, la tariffa oraria extra sarà minore di quella standard. Il totale da pagare delle ore extra dovrà essere comunicato attraverso l’invio di una fattura.
 
 **PESO (1 a 5): 3
  PRIORITÀ (1 a 5): 4**
 
-## 6.
+### 6.
 Se vengono effettuate ore aggiuntive, al termine del lavoro verrà inviata al cliente la ricevuta fiscale, con le ore concordate inizialmente, sommate a quelle extra necessarie.
 
 **PESO (1 a 5): 1
  PRIORITÀ (1 a 5): 3**
 
-## 7.
+### 7.
 Se il cliente, pubblico o privato che sia, non rispetta i tempi di pagamento concordati il programma dovrà comunicare la sanzione al cliente attraverso una nuova fattura aggiuntiva il cui importo dovrà essere confermato o modificato dall’operatore.
 
 **PESO (1 a 5): 4
  PRIORITÀ (1 a 5): 5**
 
-## 8.
+### 8.
 Chiedo che sia data la possibilità di controllare le fatture emesse in un determinato periodo, oppure dall’implementazione di questo sistema. Questa funzione inoltre deve poter mostrare i guadagni complessivi e le ore complessive lavorate nelle fatture considerate.
 
 **PESO (1 a 5): 4
  PRIORITÀ (1 a 5): 3**
 
-## 9.
+### 9.
 Il software richiesto dovrà essere di facile utilizzo in modo da non richiedere corsi di formazione per i dipendenti ma solo una lettura approfondita per poter usare l’applicativo sviluppato.
 
 **PESO (1 a 5): 1
