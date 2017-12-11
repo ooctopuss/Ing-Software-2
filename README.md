@@ -12,8 +12,8 @@ Our Billing System, was born with the target of giving our clients a great optio
 # 1. 
 Chiedo che l’impaginazione della mia fattura sia effettuata usando l’intestazione della mia azienda e predisponendo uno spazio adeguato per le ore fatturate e non fatturate e un conto totale comprensivo dell’IVA aggiornata. 
 
-# PESO (1 a 5): 1
-# PRIORITÀ (1 a 5): 3
+** PESO (1 a 5): 1
+ PRIORITÀ (1 a 5): 3**
 
 # 2.
 La mia azienda ha la necessità di lavorare sia con clienti privati che con clienti pubblici e questo deve essere predisposto con possibilità di modificare: tempi di pagamento, metodi di pagamento e prezzo orario.
