@@ -1,4 +1,4 @@
-# Ing-Software-2
+                                        (https://choosealicense.com/licenses/mit/)# Ing-Software-2
 Progetto a cura di Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
 
 # Group 15 @ooctopuss
@@ -13,6 +13,7 @@ Our Billing System, was born with the target of giving our clients a great optio
 Chiedo che l’impaginazione della mia fattura sia effettuata usando l’intestazione della mia azienda e predisponendo uno spazio adeguato per le ore fatturate e non fatturate e un conto totale comprensivo dell’IVA aggiornata. 
 
 **PESO (1 a 5): 1**
+
 **PRIORITÀ (1 a 5): 3**
 
 ### 2.
@@ -25,6 +26,7 @@ La mia azienda ha la necessità di lavorare sia con clienti privati che con clie
 Chiedo che sia implementato un contatore per le ore lavorate il quale avrà il compito di tracciare le ore effettivamente impiegate per un determinato cliente. Quando le ore dedicate ad un cliente raggiungeranno le ore standard previste dal contratto dovranno essere aumentate le ore extra.
 
 **PESO (1 a 5): 2**
+
 **PRIORITÀ (1 a 5): 4**
 
 ### 4.
