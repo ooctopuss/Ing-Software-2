@@ -10,63 +10,63 @@ Our Billing System, was born with the target of giving our clients a great optio
 # USER STORY:
 
 ### 1. 
-Chiedo che l’impaginazione della mia fattura sia effettuata usando l’intestazione della mia azienda e predisponendo uno spazio adeguato per le ore fatturate e non fatturate e un conto totale comprensivo dell’IVA aggiornata. 
+I ask that the layout of my invoice has to be done using the heading of my business, predisposing an adequate space for the billed and unbilled hour and a total count comprehensive of the updated IVA.
 
 **Weight (1 a 5): 1**
 
 **Priority (1 a 5): 3**
 
 ### 2.
-La mia azienda ha la necessità di lavorare sia con clienti privati che con clienti pubblici e questo deve essere predisposto con possibilità di modificare: tempi di pagamento, metodi di pagamento e prezzo orario.
+My business needs to work both with private clients and public ones and this has to be predisposed with possibility of modifying: times of payment, methods of payment and hourly price.
 
 **Weight (1 a 5): 3**
 
 **Priority (1 a 5): 4**
 
 ### 3.
-Chiedo che sia implementato un contatore per le ore lavorate il quale avrà il compito di tracciare le ore effettivamente impiegate per un determinato cliente. Quando le ore dedicate ad un cliente raggiungeranno le ore standard previste dal contratto dovranno essere aumentate le ore extra.
+I ask that it’ll be implemented a counter for the worked hours; it has to trace the hours effectively used for a determined client. When the hours dedicated for a client will reach the standard hours expected by the contract, the extra hours should be increased.
 
 **Weight (1 a 5): 2**
 
 **Priority (1 a 5): 4**
 
 ### 4.
-Ad ogni cliente, una volta stipulato il contratto, invio la fattura con il prezzo da pagare per le ore standard concordate.
+At each client, once stipulated the contract, I send the invoice with the price to pay for the expected standard hours.
 
 **Weight (1 a 5): 2**
 
 **Priority (1 a 5): 5**
 
 ### 5.
-Se sono necessarie ore aggiuntive perché il cliente ha richiesto delle modifiche, la tariffa oraria sarà più alta, se la causa è il team di lavoro, la tariffa oraria extra sarà minore di quella standard. Il totale da pagare delle ore extra dovrà essere comunicato attraverso l’invio di una fattura.
+If extra hours are needed because the client have required some changes, the hourly rate will be higher; if the cause is the team work, the hourly rate will be lower of the standard one. The overall to pay of the extra hours should be communicated sending an invoice.
 
 **Weight (1 a 5): 3**
 
 **Priority (1 a 5): 4**
 
 ### 6.
-Se vengono effettuate ore aggiuntive, al termine del lavoro verrà inviata al cliente la ricevuta fiscale, con le ore concordate inizialmente, sommate a quelle extra necessarie.
+If extra hours are made, at the end of the work will be sent to the client the receipt, with the hours agreed at the beginning, plus the extra ones needed.
 
 **Weight (1 a 5): 1**
 
 **Priority (1 a 5): 3**
 
 ### 7.
-Se il cliente, pubblico o privato che sia, non rispetta i tempi di pagamento concordati il programma dovrà comunicare la sanzione al cliente attraverso una nuova fattura aggiuntiva il cui importo dovrà essere confermato o modificato dall’operatore.
+If the client, public or private no matter, disrespect the agreed payment times, the program should communicate the sanction to the client through a new additional invoice, which amount should be confirmed or modified by an operator.
 
 **Weight (1 a 5): 4**
 
 **Priority (1 a 5): 5**
 
 ### 8.
-Chiedo che sia data la possibilità di controllare le fatture emesse in un determinato periodo, oppure dall’implementazione di questo sistema. Questa funzione inoltre deve poter mostrare i guadagni complessivi e le ore complessive lavorate nelle fatture considerate.
+I ask that it is given the possibility to control the issued invoices in a determined period, or from the implementation of this system. This function, furthermore, must show the overall earnings and the total worked hours in the invoices regarded.
 
 **Weight (1 a 5): 4**
 
 **Priority (1 a 5): 3**
 
 ### 9.
-Il software richiesto dovrà essere di facile utilizzo in modo da non richiedere corsi di formazione per i dipendenti ma solo una lettura approfondita per poter usare l’applicativo sviluppato.
+The software required should be of easy use so no training course for the employees but only an accurate reading is needed to use the developed software.
 
 **Weight (1 a 5): 1**
 
@@ -74,7 +74,7 @@ Il software richiesto dovrà essere di facile utilizzo in modo da non richiedere
 
 # Design Choices:
 
-Our application, developed in Ruby on Rails, has been implemented through the use of a gem called "rails_admin" that allows you to operate with an application that works in a short time. The gem in question, however, prevents a high scalability and malleability of the code as it is not particularly intuitive and editable in all its aspects; despite this small handicap we decided to use it as it provides us with attractive graphics and good management from an administrative point of view. The design logic, whose presence is also evident in the User Stories, is easy to implement and requires that the work team estimate the project in a number of hours; divided into standards and extras based on the complexity of the functions to be performed in those specific time bands; and the invoices at the beginning of the project; if the estimate proves to be accurate and the client's specifications do not vary, no problems arise; if the specifications change, a new invoice will be issued. In the event that the hours are not sufficient, the team will have to work without compensation to achieve all the specifications requested by the customer.
+Our application, developed with Ruby on Rails, was implemented using a gem called "rails admin" that let to be operative with a working application in few time. The gem in question though, prevents a high scalability and malleability of the code because it's not particularly intuitive and editable in all his aspects; despite this little problem, we decided to use it because it gives us an endearing graphic and a good management from the administrative point of view. The logic behind the project, of which you can guess the presence even from the User Stories, it's of simple implementation and expect the work team to estimate the project based on a defined number of hours, divided in standard or extra hours based on the complexity of the functions to implement in that determined piece of time and it releases an invoice at the beginning of the project. If the evaluation will be exact and the specifics will vary, it'll be issued a new invoice. In the case in which the hours won't be sufficient, the team will have to work without compensation to realize all the specifics required by the client.
 
 # License:
 
