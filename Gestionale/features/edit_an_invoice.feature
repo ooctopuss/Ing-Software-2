@@ -11,7 +11,7 @@ Feature: edit an invoice
 	And I have second client
 	And I have second activity
 
-@javascript
+  @javascript
   Scenario: change the hours_standard of an invoice
 		Given there is an invoice
 		And I am viewing the details of an invoice
@@ -21,7 +21,7 @@ Feature: edit an invoice
 		Then I am on the page of the invoice
 		And the hours_standard of the invoice is "25"
 
-@javascript
+  @javascript
   Scenario: can't insert hours_standard smaller or equal to 0
   	Given there is an invoice
   	And I am viewing the details of an invoice
@@ -30,7 +30,7 @@ Feature: edit an invoice
   	And I click on "Save"
   	Then I should see an error
 
-@javascript
+  @javascript
   Scenario: change the rate_hour_standard of an invoice
     Given there is an invoice
     And I am viewing the details of an invoice
@@ -68,20 +68,20 @@ Feature: edit an invoice
     And I click on "Save"
     Then I should see an error
 @javascript
-  Scenario: change the rate_hour_standard of an invoice
+  Scenario: change the rate_hour_extra of an invoice
     Given there is an invoice
     And I am viewing the details of an invoice
     When I click on "Edit"
-    And I change the rate_hour_standard to "25"
+    And I change the rate_hour_extra to "25"
     And I click on "Save"
     Then I am on the page of the invoice
-    And the rate_hour_standard of the invoice is "25"
+    And the rate_hour_extra of the invoice is "25"
 @javascript
-  Scenario: can't insert rate_hour_standard smaller than 0
+  Scenario: can't insert rate_hour_extra smaller than 0
     Given there is an invoice
     And I am viewing the details of an invoice
     When I click on "Edit"
-    And I change the rate_hour_standard to "-2"
+    And I change the rate_hour_extra to "-2"
     And I click on "Save"
     Then I should see an error
 

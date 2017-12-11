@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
@@ -21,11 +22,12 @@ group :test do
   gem 'database_cleaner'
 end
 
+gem 'prawn-table'
 
+gem 'prawn'
+gem "rails_admin_pdf", :git => "git://github.com/stephskardal/rails_admin_pdf.git"
 
-
-
-
+gem 'simplecov', :require => false, :group => :test
 gem 'italian_job'
 gem 'validates_email_format_of'
 gem 'remotipart', github: 'mshibuya/remotipart'

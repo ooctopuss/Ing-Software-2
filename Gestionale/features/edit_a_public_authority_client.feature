@@ -6,6 +6,7 @@ Feature: edit a public authority client
   Background:
 		Given I am a new, authenticated user
 		And I am logged in
+
 	@javascript
   Scenario: change the name of a client
 		Given there is a public authority client
@@ -15,7 +16,8 @@ Feature: edit a public authority client
 		And I click on "Save"
 		Then I am on the page of the client
 		And the name of the client is "ABCDEFG"
-@javascript
+
+	@javascript
   Scenario: change the surname of a client
   	Given there is a public authority client
   	And I am viewing the details of a client
@@ -24,7 +26,8 @@ Feature: edit a public authority client
   	And I click on "Save"
   	Then I am on the page of the client
   	And the surname of the client is "ABCDEFG"
-@javascript
+
+	@javascript
   Scenario: change the business name of a client
   	Given there is a public authority client
   	And I am viewing the details of a client
@@ -33,7 +36,8 @@ Feature: edit a public authority client
   	And I click on "Save"
   	Then I am on the page of the client
   	And the business name of the client is "ABCDEFG"
-@javascript
+
+	@javascript
   Scenario: change the address of a client
   	Given there is a public authority client
   	And I am viewing the details of a client
@@ -42,7 +46,8 @@ Feature: edit a public authority client
   	And I click on "Save"
   	Then I am on the page of the client
   	And the address of the client is "ABCDEFG"
-@javascript
+
+	@javascript
   Scenario: can't leave the address blank
   	Given there is a public authority client
   	And I am viewing the details of a client
@@ -50,7 +55,8 @@ Feature: edit a public authority client
   	And I change the address to ""
   	And I click on "Save"
   	Then I should see an error
-@javascript
+
+	@javascript
   Scenario: change the email of a client
   	Given there is a public authority client
   	And I am viewing the details of a client
@@ -59,7 +65,8 @@ Feature: edit a public authority client
   	And I click on "Save"
   	Then I am on the page of the client
   	And the email of the client is "ABCDEFG@gmail.com"
-@javascript
+
+	@javascript
   Scenario: can't leave the email blank
   	Given there is a public authority client
   	And I am viewing the details of a client
@@ -68,7 +75,8 @@ Feature: edit a public authority client
   	And I click on "Save"
   	Then I should see an error
 
-@javascript
+
+	@javascript
   Scenario: can't change the cf of a client
   	Given there is a public authority client
   	And I am viewing the details of a client
@@ -76,7 +84,8 @@ Feature: edit a public authority client
   	And I change the cf to "RSSMRA85T10A562S"
   	And I click on "Save"
   	Then I should see an error
-@javascript
+
+	@javascript
   Scenario: change the p_iva of a client
   	Given there is a public authority client
   	And I am viewing the details of a client
@@ -85,7 +94,8 @@ Feature: edit a public authority client
   	And I click on "Save"
   	Then I am on the page of the client
   	And the p_iva of the client is "07643520567"
-@javascript
+
+	@javascript
   Scenario: can't leave the p_iva blank
   	Given there is a public authority client
   	And I am viewing the details of a client

@@ -1,12 +1,21 @@
 RailsAdmin.config do |config|
-
+  require Rails.root.join('lib', 'rails_admin', 'rails_admin_pdf.rb')
+  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Pdf)
   ### Popular gems integration
 
   ## == Devise ==
-   config.authenticate_with do
-     warden.authenticate! scope: :user
-   end
-   config.current_user_method(&:current_user)
+  config.authenticate_with do
+   warden.authenticate! scope: :user
+  end
+  config.current_user_method(&:current_user)
+  config.navigation_static_links = {
+   'Ooctopuss' => 'http://www.github.com/ooctopuss'
+  }
+  config.navigation_static_label = "My Links"
+
+  RailsAdmin.config do |config|
+    config.main_app_name = ["OOCTOPUSS", "Billing system"]
+  end
 
   ## == Cancan ==
   # config.authorize_with :cancan
@@ -32,7 +41,10 @@ RailsAdmin.config do |config|
     show
     edit
     delete
+    pdf do
+      only ['Invoice']
 
+end
 
     ## With an audit adapter, you can add:
     # history_index
@@ -55,7 +67,7 @@ RailsAdmin.config do |config|
     end
   end
 
-  
+
 
 
 end
