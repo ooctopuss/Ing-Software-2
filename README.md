@@ -1,5 +1,5 @@
-                                        (https://choosealicense.com/licenses/mit/)# Ing-Software-2
-Progetto a cura di Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
+# Software Engineering 2
+Project of Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
 
 # Group 15 @ooctopuss
 
