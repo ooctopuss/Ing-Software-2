@@ -1,5 +1,5 @@
 # Software Engineering 2
-Project of Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
+Projected by Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
 
 # Group 15 @ooctopuss
 
