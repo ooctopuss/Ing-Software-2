@@ -77,8 +77,11 @@ module RailsAdmin
             pdf.text "#{@object.activity.description}"
 
             pdf.move_down 60
-            pdf.text "#{@object.date_of_issue}..............................."
-            pdf.text "Date Signature/Company Stamp"
+            data=@object.date_of_issue.to_date
+            pdf.text "Date                                                                               Signature/Company Stamp"
+            pdf.move_down 7
+            pdf.text "#{data}                                                              ......................................................."
+
 
             pdf.move_down 10
             pdf.stroke_horizontal_rule

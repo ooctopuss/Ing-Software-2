@@ -9,10 +9,24 @@ RailsAdmin.config do |config|
   end
   config.current_user_method(&:current_user)
   config.navigation_static_links = {
-   'Ooctopuss' => 'http://www.github.com/ooctopuss'
+   'Ooctopuss' => 'https://github.com/ooctopuss/Ing-Software-2',
+   'Documentation' => 'https://github.com/ooctopuss/Ing-Software-2/blob/master/README.md'
   }
   config.navigation_static_label = "My Links"
+  config.model 'User' do
+    navigation_icon 'icon-user'
+  end
+  config.model 'Invoice' do
+    navigation_icon 'fa fa-files-o'
+  end
 
+  config.model 'Client' do
+    navigation_icon 'icon-user'
+  end
+
+  config.model 'Activity' do
+    navigation_icon 'fa fa-comments-o'
+  end
   RailsAdmin.config do |config|
     config.main_app_name = ["OOCTOPUSS", "Billing system"]
   end
