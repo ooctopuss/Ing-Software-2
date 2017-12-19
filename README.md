@@ -3,6 +3,8 @@ Projected by Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
 
 # Group 15 @ooctopuss
 
+                          https://github.com/ooctopuss/Ing-Software-2/blob/master/User%20Stories.pdf
+
 # System Requirements:
 
 This app is developed in Ruby On Rails, so you need to install it on your machine before using our app. This app needs Rails 5.1.4 and Ruby 2.4.2.
