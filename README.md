@@ -2,7 +2,7 @@
 Projected by Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
 
 # Group 15 @ooctopuss
-[User Stories](https://github.com/ooctopuss/Ing-Software-2/blob/master/User%20Stories.pdf)
+# [User Stories](https://github.com/ooctopuss/Ing-Software-2/blob/master/User%20Stories.pdf)
                      
 # System Requirements:
 
