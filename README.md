@@ -5,7 +5,7 @@ Projected by Fatnassi Safouane, Piovesan Matteo, Zanardello Fabio
 
 # Description of the project:
 
-Our Billing System, was born with the target of giving our clients a great option to create and manage all the billing activities they asked for. The idea is to simplify this bureaucratic process that can give some headache, in order to focus on the real work and optimizing our client’s time.
+Our Billing System, was born with the target of giving our clients a great option to create and manage all the billing activities they asked for. The idea is to simplify this bureaucratic process that can give some headache, in order to focus on the real work and optimizing our client’s time. Thanks to our software, you can manage all the administrative aspects of your business like inserting new clients, invoices or activities, and modify or delete them if necessary. It's also available a series of tools in which you can manage the trend of your business visualizing in different ways your issued invoices, clients inserted and the activities done in their totality or in the selected field.
 
 # Design Choices:
 
