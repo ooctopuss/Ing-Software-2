@@ -26,7 +26,7 @@ Briefly with our project you can:
     
     - check all invoices issued with the system
     
-all this function are implemented with a cloud solution and your pc not need a lot of space to run owr software.
+all this function are implemented with a cloud solution and your pc not need a lot of space to run our software.
 
 # Design Choices:
 
