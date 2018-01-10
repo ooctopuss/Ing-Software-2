@@ -13,11 +13,17 @@ This app is developed in Ruby On Rails, so you need to install it on your machin
 Our Billing System, was born with the target of giving our clients a great option to create and manage all the billing activities they asked for. The idea is to simplify this bureaucratic process that can give some headache, in order to focus on the real work and optimizing our client’s time. Thanks to our software, you can manage all the administrative aspects of your business like inserting new clients, invoices or activities, and modify or delete them if necessary. It's also available a series of tools in which you can manage the trend of your business visualizing in different ways your issued invoices, clients inserted and the activities done in their totality or in the selected field.
 
 Briefly with our project you can:
+
     - insert new client
+    
     - insert new invoice
+    
     - insert new activity
+    
     - modify all fields of this records
+    
     - donwload the invoice you need
+    
     - check all invoices issued with the system
     
 all this function are implemented with a cloud solution and your pc not need a lot of space to run owr software.
