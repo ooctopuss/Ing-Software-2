@@ -12,6 +12,16 @@ This app is developed in Ruby On Rails, so you need to install it on your machin
 
 Our Billing System, was born with the target of giving our clients a great option to create and manage all the billing activities they asked for. The idea is to simplify this bureaucratic process that can give some headache, in order to focus on the real work and optimizing our client’s time. Thanks to our software, you can manage all the administrative aspects of your business like inserting new clients, invoices or activities, and modify or delete them if necessary. It's also available a series of tools in which you can manage the trend of your business visualizing in different ways your issued invoices, clients inserted and the activities done in their totality or in the selected field.
 
+Briefly with our project you can:
+    - insert new client
+    - insert new invoice
+    - insert new activity
+    - modify all fields of this records
+    - donwload the invoice you need
+    - check all invoices issued with the system
+    
+all this function are implemented with a cloud solution and your pc not need a lot of space to run owr software.
+
 # Design Choices:
 
 Our application, developed with Ruby on Rails, was implemented using a gem called "rails admin" that let to be operative with a working application in few time. The gem in question though, prevents a high scalability and malleability of the code because it's not particularly intuitive and editable in all his aspects; despite this little problem, we decided to use it because it gives us an endearing graphic and a good management from the administrative point of view. The logic behind the project, of which you can guess the presence even from the User Stories, it's of simple implementation and expect the work team to estimate the project based on a defined number of hours, divided in standard or extra hours based on the complexity of the functions to implement in that determined piece of time and it releases an invoice at the beginning of the project. If the evaluation will be exact and the specifics will vary, it'll be issued a new invoice. In the case in which the hours won't be sufficient, the team will have to work without compensation to realize all the specifics required by the client.
